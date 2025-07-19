@@ -7,6 +7,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
 <style>
+    
+    
+
   :root {
     --pastel-blue: #a8dadc;
     --pastel-pink: #f9c1c0;
@@ -188,11 +191,52 @@
       box-shadow: none;
     }
   }
+  .home-section {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.85);
+  margin: 20px auto;
+  max-width: 900px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.home-section .intro h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: var(--text-dark);
+  margin-bottom: 20px;
+}
+
+.home-section .intro p {
+  font-size: 20px;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  font-size: 18px;
+  font-weight: 600;
+  background: linear-gradient(90deg, var(--pastel-blue), var(--pastel-green));
+  color: var(--text-dark);
+  padding: 14px 28px;
+  border-radius: 14px;
+  text-decoration: none;
+  transition: background 0.3s, transform 0.3s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.cta-button:hover {
+  background: linear-gradient(90deg, var(--pastel-pink), var(--pastel-purple));
+  transform: scale(1.05);
+  color: var(--white);
+}
+
 </style>
 </head>
 
 <body>
-    
   <div class="main">
     <div class="logo">
       <i class="fa-solid fa-paw"></i>
@@ -205,11 +249,23 @@
       <span></span>
     </div>
     <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact Us</a></li>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="#">Contact</a></li>
       <li><a href="#">Login</a></li>
+      <li><a href="#">Donate</a></li>
+      <li><a href="#">About</a></li>
     </ul>
+  </div>
+  <div class="home-section">
+    <div class="intro">
+      <h1>Welcome to Bright Eyes & Waggling Tails</h1>
+      <p>
+        We're a non-profit organization dedicated to rescuing, rehabilitating, and rehoming stray and abandoned animals.<br>
+        We also bring joy to children by connecting them with loving dogs, creating lifelong friendships and brighter futures.<br>
+        Your love can change a life!
+      </p>
+      <a href="#" class="cta-button">Donate Now</a>
+    </div>
   </div>
 </body>
 </html>
